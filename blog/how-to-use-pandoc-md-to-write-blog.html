@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to use pandoc and markdown to write blog</title>
+        <meta name="dcterms.date" content="2025-07-08" />
+    "
+</head>
+<body>
+<!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1><a href="index.html">My Blog</a></h1> <!-- Link to homepage -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main>
+<h1 id="some-tutors-from-web">some tutors from web</h1>
+<p>markdown format is easy to write and read, but html is better for web
+browser. Pandoc tool is brillian to do the convert job.</p>
+<p>after the demo, we can use makefile to automatically finish the
+convert task</p>
+<p>useful knowladge is include-in-header, include-in-body,
+include-after-body, and templates and yaml meta; table-of-contents with
+toc.css</p>
+<pre><code>pandoc demo.md --template=template.html --include-in-body=header.html --include-after-body=footer.html -o demo.html</code></pre>
+<h2 id="references">references</h2>
+<p><a
+href="https://www.arthurkoziel.com/convert-md-to-html-pandoc/">convert
+markdown to html</a> <a href="https://pandoc.org/demos.html">pandoc
+demo</a> <a
+href="https://stackoverflow.com/questions/25410701/how-do-i-include-meta-tags-in-pandoc-generated-html">how
+to use header in body after body</a> <a
+href="https://pandoc-templates.org/">pandoc template</a></p>
+</main>
+
+
+ 
+ <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Blog. All Rights Reserved.</p>
+            <p><a href="privacy.html">free</a> | <a href="terms.html">cc by sa nc</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
